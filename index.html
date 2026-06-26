@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday My Love ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Background Music -->
+<audio id="bgmusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Password Screen -->
+<div id="loginPage">
+
+<h1>❤️ A Special Surprise ❤️</h1>
+
+<p>Only one person can open this gift...</p>
+
+<input
+type="password"
+id="password"
+placeholder="Enter Password">
+
+<br>
+
+<button onclick="checkPassword()">
+Open My Surprise 🎁
+</button>
+
+<p id="error"></p>
+
+</div>
+
+<!-- Main Website -->
+<div id="mainPage" style="display:none;">
+
+<section class="hero">
+
+<h1>Happy Birthday</h1>
+
+<h2>Satheesh ❤️</h2>
+
+<p>
+To My Love ❤️
+</p>
+
+<button onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})">
+Start Journey 💖
+</button>
+
+</section>
+
+<section id="gallery">
+
+<h2>📸 Our Beautiful Memories</h2>
+
+<div class="photos">
+
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+<img src="photo5.jpg">
+<img src="photo6.jpg">
+<img src="photo7.jpg">
+<img src="photo8.jpg">
+<img src="photo9.jpg">
+<img src="photo10.jpg">
+<img src="photo11.jpg">
+
+</div>
+
+</section>
+
+<section class="letter">
+
+<h2>💌 A Letter For You</h2>
+
+<div class="card">
+
+<h2>💌 A Letter From Suba</h2>
+
+<p id="typing"></p>
+
+</div>
+
+</section>
+
+<section class="gift">
+
+<h2>🎁 One Last Surprise</h2>
+
+<button onclick="showSurprise()">
+Open Gift 🎁
+</button>
+
+<div id="surprise" style="display:none;">
+
+<h1>🎂 Happy Birthday My Love ❤️</h1>
+
+<p>
+
+I hope this birthday becomes one of your happiest memories.
+
+Thank you for being part of my life.
+
+I Love You Forever ❤️
+
+— Suba
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+Made with ❤️ by Suba
+
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
